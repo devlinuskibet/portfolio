@@ -94,7 +94,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://devlinuskibet.vercel.app/"
+                href="https://devlinuskibet.hashnode.dev/the-future-of-ai"
                 target="_blank"
                 rel="noreferrer"
               >
