@@ -8,7 +8,7 @@ import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 
 import { motion } from "framer-motion";
-import { BiBriefcaseAlt2, BiCertification, BiRocket, BiTargetLock } from "react-icons/bi";
+import { BiCertification, BiRocket, BiTargetLock } from "react-icons/bi";
 import { AiFillGithub } from "react-icons/ai";
 
 function About() {

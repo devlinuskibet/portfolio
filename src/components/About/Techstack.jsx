@@ -6,9 +6,7 @@ import {
   DiNodejs,
   DiPython,
   DiGit,
-  DiJava,
   DiMongodb,
-  DiPhp,
 } from "react-icons/di";
 import { CgCPlusPlus } from "react-icons/cg";
 import {
@@ -18,9 +16,7 @@ import {
   SiTensorflow,
   SiNextdotjs,
   SiTailwindcss,
-  SiMysql,
   SiAngular,
-  SiLaravel,
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
 
