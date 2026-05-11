@@ -10,80 +10,90 @@ import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 
 function Projects() {
+  const projects = [
+    {
+      imgPath: suicide,
+      title: "MamaCare",
+      category: "AI-Powered Healthcare System",
+      description: "A life-saving intelligent maternal healthcare platform acting as a 24/7 digital nurse for expectant mothers.",
+      problem: "Addresses the 'Three Delays' in maternal healthcare: identifying danger signs, reaching facilities, and receiving care.",
+      impact: "Automatically identifies danger signs and routes GPS location/health data to the nearest hospital during emergencies.",
+      tech: ["React.js", "Node.js", "Python", "Geolocation", "Cloud Integration"],
+      ghLink: "https://github.com/devlinuskibet",
+      demoLink: "#"
+    },
+    {
+      imgPath: emotion,
+      title: "AI Skin Disease Detection",
+      category: "Deep Learning / Healthcare",
+      description: "CNN-based deep learning system for classifying skin conditions using medical image analysis.",
+      problem: "Improving accessibility to early diagnosis support for dermatological conditions in underserved regions.",
+      impact: "Winner of an Inter-University AI Hackathon; provides real-time predictions via a web-based interface.",
+      tech: ["Python", "TensorFlow", "CNNs", "Flask", "React.js"],
+      ghLink: "https://github.com/devlinuskibet",
+      demoLink: "#"
+    },
+    {
+      imgPath: leaf,
+      title: "NumeraAI",
+      category: "AI Automation / FinTech",
+      description: "Intelligent bookkeeping assistant designed to automate financial record management for SMEs.",
+      problem: "High manual workload and reporting inefficiencies in traditional small business accounting processes.",
+      impact: "Reduced manual bookkeeping workload and significantly improved reporting efficiency through automated workflows.",
+      tech: ["Python", "AI APIs", "Automation Workflows", "PostgreSQL", "React.js"],
+      ghLink: "https://github.com/devlinuskibet",
+      demoLink: "#"
+    },
+    {
+      imgPath: chatify,
+      title: "Murang’a University RAG Chatbot",
+      category: "Generative AI / RAG",
+      description: "Advanced Retrieval-Augmented Generation chatbot for high-precision academic information retrieval.",
+      problem: "Delayed and fragmented access to academic queries and university-specific documentation.",
+      impact: "Implemented vector search architecture with Pinecone, resulting in optimized contextual response generation.",
+      tech: ["Python", "Pinecone", "Mistral", "OpenRouter", "n8n"],
+      ghLink: "https://github.com/devlinuskibet",
+      demoLink: "#"
+    },
+    {
+      imgPath: editor,
+      title: "Customer Intelligence System",
+      category: "AI Analytics / BI",
+      description: "AI-driven platform for analyzing customer behavior and generating actionable sales insights.",
+      problem: "Difficulty in identifying churn risks and high-value customers within complex business datasets.",
+      impact: "Built predictive models for customer segmentation and churn risk identification, driving personalized engagement.",
+      tech: ["Python", "Machine Learning", "Data Analytics", "Predictive Modeling", "React.js"],
+      ghLink: "https://github.com/devlinuskibet",
+      demoLink: "#"
+    }
+  ];
+
   return (
     <Container fluid className="project-section">
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          Featured <strong className="purple">Engineering Works </strong>
         </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+        <p style={{ color: "white", fontSize: "1.2rem", marginBottom: "3rem" }}>
+          Showcasing impact-driven projects focused on architecture, scalability, and solving real-world business problems.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={chatify}
-              isBlog={false}
-              title="Ted Chatbot"
-              description="A deep-learning-based multipurpose chatbot built with Python3, capable of handling various user queries and tasks."
-              ghLink="https://github.com/devlinuskibet/Chatbot"
-              demoLink="https://ted-the-deep-learning-bot.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="LogReg"
-              description="A regularized logistic regression method for biomarker discovery from gene expression data."
-              ghLink="https://github.com/LingyuLi-math/LogReg"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Flutter VPN"
-              description="A VPN app concept UI designed using Flutter, providing a sleek and modern interface for secure connections."
-              ghLink="https://github.com/madeeldev/flutter-vpn"            
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Multithreading Android App"
-              description="An Android application demonstrating multithreading capabilities using Kotlin, enhancing performance and responsiveness."
-              ghLink="https://github.com/devlinuskibet/MultithreadingAndroidApp"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/devlinuskibet/chatbot"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/flower_identification"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
+          {projects.map((project, index) => (
+            <Col md={4} key={index} className="project-card">
+              <ProjectCard
+                imgPath={project.imgPath}
+                title={project.title}
+                category={project.category}
+                description={project.description}
+                problem={project.problem}
+                impact={project.impact}
+                tech={project.tech}
+                ghLink={project.ghLink}
+                demoLink={project.demoLink}
+              />
+            </Col>
+          ))}
         </Row>
       </Container>
     </Container>

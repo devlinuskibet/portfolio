@@ -741,3 +741,163 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+/* Professional Home Page Updates */
+.home-intro-text {
+  font-size: 1.2rem !important;
+  color: #adb5bd;
+  margin-bottom: 2rem !important;
+  max-width: 600px;
+}
+
+.home-cta-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.home-cta-btn {
+  padding: 0.8rem 1.5rem !important;
+  font-size: 1rem !important;
+  border-radius: 5px !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(190, 80, 244, 0.4) !important;
+}
+
+.home-social-hero {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.hero-social-link {
+  color: #fff !important;
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+}
+
+.hero-social-link:hover {
+  color: #be50f4 !important;
+  transform: scale(1.1);
+}
+
+.section-title {
+  font-size: 2.5rem !important;
+  margin-bottom: 3rem !important;
+  text-align: center;
+  color: white;
+}
+
+.expertise-card {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(190, 80, 244, 0.1) !important;
+  border-radius: 15px !important;
+  padding: 2rem !important;
+  height: 100%;
+  transition: all 0.3s ease !important;
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+.expertise-card:hover {
+  border-color: rgba(190, 80, 244, 0.5) !important;
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.achievement-card {
+  background: linear-gradient(135deg, rgba(190, 80, 244, 0.1) 0%, rgba(255, 255, 255, 0.02) 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border-radius: 12px !important;
+  padding: 1.5rem !important;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.tech-group-title {
+  color: #be50f4;
+  margin-bottom: 1.5rem !important;
+  font-size: 1.5rem !important;
+}
+
+.tech-badge {
+  background: rgba(190, 80, 244, 0.15) !important;
+  color: #be50f4 !important;
+  border: 1px solid rgba(190, 80, 244, 0.3) !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 20px !important;
+  margin: 0.5rem;
+  display: inline-block;
+  font-weight: 500;
+}
+
+/* Projects Section Overhaul */
+.project-category-badge {
+  background: rgba(190, 80, 244, 0.2) !important;
+  color: #be50f4 !important;
+  padding: 0.3rem 0.8rem !important;
+  border-radius: 4px !important;
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.project-card-view {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border-radius: 15px !important;
+  overflow: hidden;
+  height: 100%;
+  transition: all 0.4s ease !important;
+  backdrop-filter: blur(10px);
+}
+
+.project-card-view:hover {
+  transform: translateY(-10px);
+  border-color: rgba(190, 80, 244, 0.4) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+}
+
+.project-impact-box {
+  background: rgba(190, 80, 244, 0.05);
+  border-left: 3px solid #be50f4;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.project-impact-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #be50f4;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+}
+
+.project-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.project-tech-tag {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: #adb5bd;
+}
