@@ -5,11 +5,11 @@ import {
   AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaHashnode } from "react-icons/fa6";
+import { CONTACT } from "../data/profile";
 
 function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
+  const year = new Date().getFullYear();
   return (
     <Container fluid className="footer">
       <Row>
@@ -17,46 +17,62 @@ function Footer() {
           <h3>Designed and Developed by Linus Kibet</h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} LK</h3>
+          <h3>Copyright &copy; {year} LK</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href="https://github.com/devlinuskibet"
+                href={CONTACT.github}
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
+                aria-label="GitHub"
               >
                 <AiFillGithub />
               </a>
             </li>
             <li className="social-icons">
               <a
-                href="https://twitter.com/linuskibet"
+                href={CONTACT.linkedin}
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
-              >
-                <AiOutlineTwitter />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.linkedin.com/in/linuskibet/"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
+                aria-label="LinkedIn"
               >
                 <FaLinkedinIn />
               </a>
             </li>
             <li className="social-icons">
               <a
-                href="https://www.instagram.com/i_issme"
+                href={CONTACT.hashnode}
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Hashnode article"
+              >
+                <FaHashnode />
+              </a>
+            </li>
+            {/* Twitter/X and Instagram left in place — owner should decide whether to keep on a professional site */}
+            <li className="social-icons">
+              <a
+                href={CONTACT.twitter}
+                style={{ color: "white" }}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter / X"
+              >
+                <AiOutlineTwitter />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href={CONTACT.instagram}
+                style={{ color: "white" }}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
               >
                 <AiFillInstagram />
               </a>
