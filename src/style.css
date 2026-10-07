@@ -901,3 +901,170 @@ button:focus {
   font-size: 0.75rem;
   color: #adb5bd;
 }
+
+/* --------- */
+/* Experience Timeline */
+/* --------- */
+.timeline {
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.9rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #be50f4, rgba(190, 80, 244, 0.1));
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -2.5rem;
+  top: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #be50f4, #6d20c5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+  flex-shrink: 0;
+  box-shadow: 0 0 12px rgba(190, 80, 244, 0.5);
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.timeline-header {
+  margin-bottom: 0.8rem;
+}
+
+.timeline-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.3rem;
+}
+
+.timeline-company {
+  color: #adb5bd;
+  font-size: 1rem;
+}
+
+.timeline-location {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.timeline-badge {
+  background: rgba(190, 80, 244, 0.15);
+  border: 1px solid rgba(190, 80, 244, 0.3);
+  color: #be50f4;
+  padding: 0.15rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.timeline-badge--current {
+  background: rgba(40, 200, 100, 0.15);
+  border-color: rgba(40, 200, 100, 0.4);
+  color: #40d494;
+}
+
+.timeline-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline-bullets li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #adb5bd;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.timeline-bullets li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #be50f4;
+}
+
+/* --------- */
+/* Project Card Cover (replaces placeholder images) */
+/* --------- */
+.project-card-cover {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.project-cover-icon {
+  font-size: 4rem;
+  opacity: 0.85;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Live badge */
+.project-live-badge {
+  background: rgba(40, 200, 100, 0.2);
+  border: 1px solid rgba(40, 200, 100, 0.4);
+  color: #40d494;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* Featured badge */
+.project-featured-badge {
+  background: rgba(255, 200, 0, 0.2);
+  border: 1px solid rgba(255, 200, 0, 0.4);
+  color: #ffd700;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* Featured project card — wider card slight glow */
+.project-card-featured {
+  border-color: rgba(190, 80, 244, 0.4) !important;
+  box-shadow: 0 0 30px rgba(190, 80, 244, 0.2) !important;
+}
+
+/* Responsive: 360px */
+@media (max-width: 400px) {
+  .home-cta-buttons {
+    flex-direction: column;
+  }
+
+  .timeline {
+    padding-left: 2rem;
+  }
+}
+
