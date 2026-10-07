@@ -9,7 +9,8 @@ import { motion } from "framer-motion";
 import { AiFillGithub, AiFillMail } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
-import { BiBriefcaseAlt2 } from "react-icons/bi";
+import { BiBriefcaseAlt2, BiBook } from "react-icons/bi";
+import { CONTACT, CV_PATH, CV_FILENAME } from "../../data/profile";
 
 function Home() {
   return (
@@ -44,41 +45,53 @@ function Home() {
                   <p className="home-intro-text">
                     I build scalable web applications, AI-powered systems, and intelligent digital solutions that solve real business problems.
                   </p>
-                  
+
                   <div className="home-cta-buttons">
-                    <button 
+                    <button
                       onClick={() => window.open("/project", "_self")}
                       className="btn btn-primary home-cta-btn"
                     >
                       <BiBriefcaseAlt2 style={{ marginBottom: "2px" }} /> &nbsp;View Projects
                     </button>
-                    <button 
-                      onClick={() => window.open("https://github.com/devlinuskibet", "_blank")}
+                    {/* Download CV — points to the real PDF with the download attribute */}
+                    <a
+                      href={CV_PATH}
+                      download={CV_FILENAME}
                       className="btn btn-primary home-cta-btn"
+                      style={{ textDecoration: "none" }}
                     >
                       <CgFileDocument style={{ marginBottom: "2px" }} /> &nbsp;Download CV
-                    </button>
-                    <button 
-                      onClick={() => window.open("mailto:linuslinus020@gmail.com")}
+                    </a>
+                    <button
+                      onClick={() => window.open(`mailto:${CONTACT.email}`)}
                       className="btn btn-primary home-cta-btn"
                     >
                       <AiFillMail style={{ marginBottom: "2px" }} /> &nbsp;Contact Me
                     </button>
+                    <a
+                      href={CONTACT.hashnode}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary home-cta-btn"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <BiBook style={{ marginBottom: "2px" }} /> &nbsp;Read my article
+                    </a>
                   </div>
 
                   <div className="home-social-hero">
                     <a
-                      href="https://github.com/devlinuskibet"
+                      href={CONTACT.github}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       className="hero-social-link"
                     >
                       <AiFillGithub />
                     </a>
                     <a
-                      href="https://www.linkedin.com/in/linuskibet/"
+                      href={CONTACT.linkedin}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       className="hero-social-link"
                     >
                       <FaLinkedinIn />
@@ -96,7 +109,7 @@ function Home() {
               >
                 <img
                   src={homeLogo}
-                  alt="home pic"
+                  alt="Illustration of a developer at work"
                   className="img-fluid"
                   style={{ maxHeight: "450px" }}
                 />
