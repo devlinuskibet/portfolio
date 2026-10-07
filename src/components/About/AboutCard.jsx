@@ -1,13 +1,11 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
-
-import { 
-  BiTargetLock, 
-  BiCodeCurly, 
-  BiSelection, 
-  BiTrendingUp, 
-  BiUserVoice 
+import {
+  BiTargetLock,
+  BiCodeCurly,
+  BiSelection,
+  BiUserVoice,
+  BiTrendingUp,
 } from "react-icons/bi";
 
 function AboutCard() {
@@ -16,31 +14,39 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            I am <span className="purple">Linus Kibet</span>, a Software Engineer and AI Systems Developer based in <span className="purple">Nairobi, Kenya.</span>
-            <br /><br />
-            My focus is on engineering <span className="purple">scalable web applications</span> and <span className="purple">intelligent digital products</span> that drive business value. 
-            I specialize in bridging the gap between robust backend systems and intuitive frontend experiences, powered by modern AI architectures.
+            I am <span className="purple">Linus Kibet</span>, a Computer Science graduate (
+            <span className="purple">Second Class Honours, Upper Division</span>) from Murang'a University of Technology,
+            based in <span className="purple">Nairobi, Kenya</span>. I build LLM-powered applications in Python
+            and full-stack and mobile software using React, React Native, Node.js, and FastAPI.
+          </p>
+
+          <p style={{ textAlign: "justify" }}>
+            My professional journey includes serving as a <span className="purple">Technical Trainer</span> at
+            Murang'a University of Technology, where I deliver practical mobile application development sessions;
+            working as a <span className="purple">Frontend Developer (Contract)</span> at Venturseed — where I built
+            a React Native mobile version of a production web product, reduced page load time by 45%, and designed
+            a reusable component library of 30+ components; and completing an <span className="purple">IT Support &amp;
+            Application Developer Attachment</span> at Kenyatta University Teaching, Referral &amp; Research Hospital,
+            where I developed internal web applications and provided technical support to clinical teams.
+            I have also gained experience at <strong>Zeraki</strong>.
+          </p>
+
+          <p style={{ textAlign: "justify" }}>
+            I am deeply interested in <span className="purple">AI systems, RAG and LLM applications</span>, and the
+            intersection of technology with healthcare and business challenges.
           </p>
 
           <h3 className="purple" style={{ fontSize: "1.5rem", marginTop: "20px" }}>
             <BiTargetLock /> Engineering Philosophy
           </h3>
           <p style={{ textAlign: "justify" }}>
-            I believe in building systems that are <strong>clean, maintainable, and performance-driven</strong>. 
-            My approach is rooted in clean architecture principles and a commitment to continuous improvement. 
+            I believe in building systems that are <strong>clean, maintainable, and performance-driven</strong>.
+            My approach is rooted in clean architecture principles and a commitment to continuous improvement.
             I don't just write code; I design solutions that solve real-world problems with technical precision.
           </p>
 
           <h3 className="purple" style={{ fontSize: "1.5rem", marginTop: "20px" }}>
-            <BiTrendingUp /> Career Journey
-          </h3>
-          <p style={{ textAlign: "justify" }}>
-            Starting from specialized academic projects, I have transitioned into developing <strong>healthcare systems, enterprise-grade applications, and AI-powered automation tools</strong>. 
-            My professional experience at companies like Venturseed and Zeraki has shaped my ability to deliver in fast-paced, production environments.
-          </p>
-
-          <h3 className="purple" style={{ fontSize: "1.5rem", marginTop: "20px" }}>
-            Professional Commitments
+            <BiTrendingUp /> Professional Commitments
           </h3>
           <ul>
             <li className="about-activity">
