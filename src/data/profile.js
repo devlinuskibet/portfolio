@@ -17,9 +17,8 @@ export const CONTACT = {
 };
 
 // ── CV / Resume ───────────────────────────────────────────────
-// TODO: Replace with Linus_Kibet_CV.pdf once the owner supplies the file.
-// Until then, the existing devlinuskibet.pdf is used.
-export const CV_PATH = "/src/Assets/devlinuskibet.pdf";
+import cvPdf from "../Assets/devlinuskibet.pdf";
+export const CV_PATH = cvPdf;
 export const CV_FILENAME = "Linus_Kibet_CV.pdf";
 
 // ── Experience (reverse-chronological) ───────────────────────
